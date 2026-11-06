@@ -1,23 +1,28 @@
-name: Update Activity Graph
+
+name: Update GitHub Profile Graphs
 
 on:
-  schedule: # execute every 12 hours
-    - cron: "* */12 * * *"
+  schedule:
+    - cron: "0 */12 * * *"
 
   workflow_dispatch:
 
   push:
     branches:
-    - main
+      - main
 
 jobs:
   build:
     permissions:
       contents: write
+
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v6
+
+      - name: Prepare output directory
+        run: mkdir -p dist
 
       - name: Generate activity graph
         uses: maurodesouza/github-readme-activity-graph-action@v1
@@ -27,7 +32,13 @@ jobs:
           output_path: dist/activity-graph.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Push activity-graph.svg to the output branch
+      - name: Generate GitHub stats card
+        run: |
+          curl --fail --location --retry 3 \
+            "https://github-stats-extended.vercel.app/api?username=mizureoo&rank_icon=github&hide_title=true&show_icons=true&include_all_commits=true&theme=dark_github" \
+            --output dist/github-stats.svg
+
+      - name: Push generated SVGs to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: activity-graph-output
