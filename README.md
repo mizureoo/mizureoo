@@ -34,8 +34,8 @@
 
 ###
 
-<div data-importer="stats" align="center">
-  <img src="https://github-stats-extended.vercel.app/api?username=mizureoo&rank_icon=github&hide_title=true&show_icons=true&include_all_commits=true&theme=dark_github" />
+<div align="center">
+  <img src="https://raw.githubusercontent.com/mizureoo/mizureoo/activity-graph-output/github-stats.svg" />
 </div>
 
 ###
