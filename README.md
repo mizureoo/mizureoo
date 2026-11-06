@@ -35,7 +35,13 @@
 ###
 
 <div data-importer="stats" align="center">
-  <img src="https://raw.githubusercontent.com/mizureoo/mizureoo/activity-graph-output/activity-graph.svg?radius=16&theme=tokyo-night&area=true&order=5" height="300" alt="activity-graph graph"  />
+  <img src="https://github-stats-extended.vercel.app/api?username=mizureoo&rank_icon=github&hide_title=true&show_icons=true&include_all_commits=true&theme=dark_github" />
+</div>
+
+###
+
+<div data-importer="stats" align="center">
+  <img src="https://raw.githubusercontent.com/mizureoo/mizureoo/activity-graph-output/activity-graph.svg?radius=16&theme=dark_github&area=true&order=5" height="300" alt="activity-graph graph"  />
 </div>
 
 ###
@@ -45,13 +51,5 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mizureoo/mizureoo/pacman-output/puzzle-bobble-contribution-graph.svg?game=puzzle-bobble">
   <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/mizureoo/mizureoo/pacman-output/puzzle-bobble-contribution-graph.svg?game=puzzle-bobble">
 </picture>
-
-###
-
-<div align="center">
-  <a href="https://forthebadge.com/">
-    <img src="https://forthebadge.com/images/badges/built-with-love.svg" alt="Built with love" />
-  </a>
-</div>
 
 ###
