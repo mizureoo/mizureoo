@@ -48,6 +48,10 @@
 
 ###
 
-[![forthebadge](/badges/built-with-love.svg)](https://forthebadge.com)
+<div align="center">
+  <a href="https://forthebadge.com/">
+    <img src="https://forthebadge.com/images/badges/built-with-love.svg" alt="Built with love" />
+  </a>
+</div>
 
 ###
